@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SIGN IN PAGE</title>
+<link rel="stylesheet" type="text/css" href="signin.css">
+</head>
+
+<body class="design">
+	<button id="box1">CLICK HERE</button>
+	<div class="all">
+		
+	<legend></legend>
+
+<form  onsubmit="return validate()" method="post">
+<div id="jet">
+	<label id="space">Email</label>
+	<input type="email" placeholder="Your email" id="set1">
+	<br><br>
+	</div>
+	<label id="space1">Password</label>
+	<input type="Password" placeholder="Require password" id="set2"><br><br>
+
+	<button id="crook">SIGN IN </button>
+</form>
+</div>
+
+<div class="bubbles">
+	<img src="image/b.png">
+	<img src="image/b.png">
+	<img src="image/b.png">
+	<img src="image/b.png">
+	<img src="image/b.png">
+	<img src="image/b.png">
+	<img src="image/b.png">
+	<img src="image/b.png">
+	<img src="image/b.png">
+	</div>
+	<!--if internet connection is not avail it cant load  the CDN verison-->
+	<script src="//code.jquery-3.5.1.min.js"></script>
+	<!--<script src="jquery-3.5.1.js"></script>-->
+	<!-- if cdn fail to loads serve us the local version -->
+	<script>window.jquery || document.write('<script src="jquery-3.5.1.js"><\/script>');</script>
+  <script src="brew.js"></script>
+	<script src="signin.js"></script>
+</body>
+</html>

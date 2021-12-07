@@ -1,0 +1,299 @@
+* {
+	margin:0px;
+	padding: 0px;
+}
+ body {
+     font-size: 20px;
+     color: white;
+     overflow-x: hidden;
+	 box-sizing: border-box;
+
+	 border-radius: 10px;
+	
+
+ }
+ .clearfixafter{
+	 content:"" ;
+	 visibility: hidden;
+	 display: table;
+	 height: 0px;
+	 clear: both;
+ }
+
+
+ header {
+ 	background:  url(image/clothes.jpg);
+ 	background-size: cover;
+ 	height: 100vh;
+ 	background-repeat: no-repeat;
+}
+
+
+.row {
+      max-width: 1180px;
+	  margin: 0 auto;
+	  width: 100%;
+}
+/*take note you havent design your logo*/
+.logo {
+	height: 150px;
+	width: 150px;
+	float: left;
+	margin-top: 10px;
+	opacity:50%;
+}
+.main-nav {
+	float: right;
+	margin-top: 60px;
+}
+.main-nav li {
+	display: inline-block;
+	list-style: none;
+	margin-left: 40px;
+}
+.main-nav li a {
+	padding: 5px 0;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-size:18px;
+	/*You can make use of 40% 0f body font size = 18px*/
+	font-weight: 100;
+}
+.main-nav li a:hover {
+	border:3px solid DarkGoldenRod;
+	padding:5px;
+	margin:10px;
+
+
+}
+.main-content{
+	width: 1180px;
+	position: absolute;
+	top: 55%;
+	left: 55%;
+	transform: translate(-55%, -55%);
+}
+h1 {
+	color: #fff;
+	font-size: 40px;
+	font-family: 'Montserrat', sans-serif;
+	word-spacing: 5px;
+	letter-spacing: 3px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	font-weight: lighter;
+	text-shadow: -1px -1px rgba(0, 0, 0, 0.3);
+}
+.btn {
+	display: inline-block;
+	padding: 10px;
+	font-weight: lighter;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 2px;
+	transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+.btn-full {
+	background-color: transparent ;
+	color: #bf55ec;
+	margin-right: 15px;
+	border: 1px solid #bf55ec;
+}
+.btn-nav {
+	background-color: transparent;
+	color: #fff;
+	border: 1px solid white;
+}
+.btn-full:hover  {
+     background-color: #fff;
+}
+.btn-nav:hover {
+	background-color: DarkGoldenRod;
+}
+.great {
+	background: white;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: cover;
+	height: 100vh;
+}
+ .finish {
+	 background-color:cornflowerblue ;
+	 color:white;
+	 background-repeat: no-repeat;
+	 background-position: none;
+	 width:100%;
+	 height:300px;
+	 margin: 0 auto;
+	 text-align: center;
+ }
+.clearfix::after{
+	clear:both;
+	display:flex;
+}
+
+.done  {
+		 text-decoration:none;
+		 padding: 3px;
+		 margin: 0px;
+		 list-style:none;
+		 column-count:2;
+		 -webkit-column-count:2;
+		 -moz-column-count: 2;
+		 column-gap: 5px;
+		 -webkit-column-gap: 5px;
+		 -moz-column-gap: 5px;
+	 }
+
+.done li {
+		 text-decoration: none;
+		 list-style: none;
+		 padding:10px;
+		 line-height: inherit;
+		 
+		 margin: 0 auto;
+	 }
+
+
+.wrap{
+	display:grid;
+	grid-template-columns: repeat(3, 2fr);
+	grid-gap: 1.5rem;
+	margin:0 auto;
+	max-width: 1000px;
+	width:100%;
+
+}
+div.gallery {
+	float: left;
+	margin: 0 auto;
+	width: 250px;
+	border: none;
+	
+	
+	
+	
+	
+}
+
+div.gallery img {
+	 width: 100%;
+	 height: auto;
+	 padding:1rem;
+	 border-radius: 5px;
+ }
+
+div.desc {
+	text-align: center;
+	padding: 15px;
+	color: black;
+	float:left;
+}
+.image img {
+
+	padding: 10px 15px;
+	cursor: pointer;
+}
+ a:hover img {
+	background:rgba(0, 0, 0, 0.3);
+}
+.png {
+	align-content: center;
+	display:flex;
+	flex-direction: row;
+	margin-top: 20px ;
+	margin: 0 auto;
+	margin-bottom:10px;
+	padding: 20px;
+	justify-content: center;
+
+}
+
+
+#facebook,#instagram,#twitter,#youtube {
+	width: 50px;
+	height: 50px;
+
+}
+
+
+#copy {
+  background-color:rgb(106, 107, 136);
+	
+	font-size:1rem;
+	text-align: center;
+	bottom: 0;
+	top:0;
+	left:0;
+	padding: 10px 13px;
+	color:white;
+
+
+}
+
+
+.colorchange {
+	animation: focus 10s infinite;
+}
+	/*animation-name:  focus;
+	animation-duration: infinite;
+	animation-delay: 1s;
+	animation-iteration-count:infinite;*/
+
+/*Animation and transition */
+@keyframes focus{
+	0%{color: #fff;}/*percentage animation*/
+	25%{color: #bf55ec;}
+	50%{color: DarkGoldenRod;}
+	75%{color: Aquamarine;}
+	80% {border:1px solid #bf55ec;}
+	100%{color:#bf55ec;}
+
+}
+/*Reponsive media 	Queries*/
+.mobile-icon {
+	display:inline-block;
+	color: #fff;
+	
+	margin-top: 30px;
+	margin-right: 20px;
+}
+@media only screen and (max-width: 1180px) {
+	.main-content{
+		width:100%;
+		padding:0 2%;
+	}
+}
+@media only screen and (max-width: 990px){
+	h1{font-size: 200%;}
+}
+@media only screen and (max-width: 765px) {
+	h1{font-size: 180%;
+		padding-left: 20px;
+	}
+
+	.main-nav{display:none;}
+	.wrap {
+		grid-template-columns: repeat(1,100%);
+		margin:0 auto;
+		max-width: 1000px;
+		width:100%;
+	}
+	div.gallery {
+		float: left;
+		margin: 0 auto;
+		width: 300px;
+		border: none;
+		
+		
+		
+		
+	}
+	h1,.comb{
+		font-size:150%;
+		margin: 15px;
+	}
+
+}

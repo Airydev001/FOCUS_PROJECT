@@ -1,0 +1,148 @@
+i *{
+ 	margin:0px;
+ 	padding:0px;
+ 	text-decoration:none;
+ }
+ .design {
+        background-image:url("image/lauren.jpg");
+        background-size: cover;
+        height:100vh;
+        background-repeat: none;
+        font-size:18px;
+        text-align:center;
+ }
+.all {
+	    font-size:14px;
+ 	    top:40%;
+ 	    left:45%;
+ 	    transform:translate(-40%, -45%);
+ 	    position:absolute;
+ 	    background:rgba(120, 120, 120, 0.384);
+ 	    width:500px;
+ 	    height:350px;
+ 	    margin:20px;
+ 	    padding:10px;
+ 	    border-radius:10px;
+ 	    border: 4px solid  rgba(0, 0, 0, 0.2);
+
+
+ }
+ #box  {
+       margin:6px;
+       padding:2px;
+       text-transform: uppercase;
+       font-size: 19px;
+ }
+ #space {
+ 	margin-right:10px;
+ 	margin-bottom: 10px;
+ 	justify-content: 10px;
+    color:white;
+ }
+  #space1 {
+ 	margin-right:10px;
+ 	margin-bottom: 10px;
+ 	justify-content: 2px;
+    color:white;
+		}
+        #jet {
+                  margin-left: 20px;
+                  justify-content: all;
+                  font-size:18px;
+
+
+                     }
+input[type="email"],input[type="Password"] {
+                border-radius: 5px;
+                padding: 20px;
+                width: 290px;
+                height: 30px;
+                text-align: left;
+                background: white;
+                box-shadow: 3px 5px 4px 2px#333;
+                margin-top:20px;
+                font-size:12px;
+                font-style: bold;
+
+
+            /*This is a box shadow hor ver blur spread*/
+ }
+ button {
+    margin:12px;
+    padding:13px;
+    background: url("image/good.jpg");
+    justify-content: center;
+    cursor:pointer;
+    border-radius: 5px;
+    color:white;
+    padding:10px;
+}
+button:hover {
+    margin:30px;
+    padding:15px;
+    background-color: #fc3;
+    color:crimson;
+}
+input[type="email"]:hover, input[type="Password"]:hover {
+         border-bottom: 2px solid red;
+         margin:20px;
+         padding:15px;
+}
+.bubbles img {
+    width:50px;
+    animation:b 8s linear infinite;
+}
+.bubbles {
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    position:absolute;
+    bottom:-70px;
+}
+@keyframes b{
+    0%{
+        transform: translateY(0);
+        opacity:1;
+    }
+    25%{
+        transform: translateY(0);
+        opacity:0.7;
+    }
+    50%{
+        transform: translateY(0);
+        opacity:1;
+    }
+    75%{
+        transform: translateY(-80vh);
+        opacity:0.8;
+    }
+    100%{
+        transform: translateY(-100vh);
+        opacity:0.5;
+    }
+}
+.bubbles img:nth-child(1) {
+    animation-delay: 1.5s;
+}
+.bubbles img:nth-child(2) {
+    animation-delay: 2s;
+}
+.bubbles img:nth-child(3) {
+    animation-delay: 3s;
+}
+.bubbles img:nth-child(4) {
+    animation-delay: 3.2s;
+}
+.bubbles img:nth-child(5) {
+    animation-delay: 3.5s;
+}
+.bubbles img:nth-child(6) {
+    animation-delay: 4.5s;
+}
+.bubbles img:nth-child(7) {
+    animation-delay: 6.5s;
+}
+.bubbles img:nth-child(8) {
+    animation-delay: 7.5s;
+}
